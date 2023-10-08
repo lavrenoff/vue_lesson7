@@ -521,6 +521,7 @@
 }
 
 .blogdetails {
+    padding-bottom: 100px;
     &__img {
         width: 100%;
     }
@@ -668,7 +669,7 @@
         flex-wrap: wrap;
     }
 
-    &__tags button {
+    &__btn {
         background-color: #F4F0EC;
         border: 0px;
         padding-top: 10px;
@@ -681,10 +682,16 @@
 
     }
 
-    &__tags button:hover {
+    &__btn:hover {
         background-color: #292F36;
         color: white;
     }
+
+    &__btnactive {
+        background-color: #292F36;
+        color: white;
+    }
+
 
     &__buttons {
         padding-top: 30px;

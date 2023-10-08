@@ -7,6 +7,16 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
+        BlogDetailsList: [{
+            id: 1, tag: 'kitchen', src: require('@/assets/img/cat1.png'), category: 'Kitchan Design', titleText: 'Lets Get Solution For Building Construction Work', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.Lorem Ipsum is not simply random text. It has roots in a piece of classica turpis dignissim maximus.posuere in.Contrary to popular belief.Lorem Ipsum is not simply random text. It has roots in a piece of classica'
+        },
+        {
+            id: 2, tag: 'bedroom', src: require('@/assets/img/cat2.png'), category: 'Bedroom', titleText: 'Bigs Get Selected', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.Lorem Ipsum is not simply random text. It has roots in a piece of classica turpis dignissim maximus.posuere in.Contrary to popular belief.Lorem Ipsum is not simply random text. It has roots in a piece of classica'
+        },
+        {
+            id: 3, tag: 'building', src: require('@/assets/img/cat3.png'), category: 'Bedroom', titleText: 'Add Product', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.Lorem Ipsum is not simply random text. It has roots in a piece of classica turpis dignissim maximus.posuere in.Contrary to popular belief.Lorem Ipsum is not simply random text. It has roots in a piece of classica'
+        }
+        ],
         CategoryList: [
             { id: '1', tag: 'kitchen', src: require('@/assets/img/kitchen1.png'), alt: 'kitchen1', p1: 'Modern Kitchen', p2: 'Decor / Artchitecture' },
             { id: '2', tag: 'kitchen', src: require('@/assets/img/kitchen2.png'), alt: 'kitchen2', p1: 'Modern Kitchen', p2: 'Decor / Artchitecture' },
@@ -77,5 +87,10 @@ export default new Vuex.Store({
             dat: '25 December,2022',
         }
         ]
+    },
+    getters: {
+        getBlogDetailsList(state) {
+            return state.BlogDetailsList
+        },
     }
 })

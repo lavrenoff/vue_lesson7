@@ -49,6 +49,7 @@
                         <h3 class="main__h3">{{ item.name }}</h3>
                         <div class="main__news_bottom">
                             <span>{{ item.dat }}</span>
+                            <router-link to="/blogdetails">
                             <svg width="52" height="53" viewBox="0 0 52 53"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="26" cy="26.267" r="26"
@@ -59,6 +60,7 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
+                            </router-link>
                         </div>
 
                     </div>

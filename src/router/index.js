@@ -4,6 +4,8 @@ import HomeView from '../views/HomeView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import ProjectDetailsView from '../views/ProjectDetailsView.vue'
 import BlogView from '../views/BlogView.vue'
+import BlogDetails from '../views/BlogDetails.vue'
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +29,20 @@ const routes = [
     path: '/blog',
     name: 'blog',
     component: BlogView
+  },
+  {
+    path: '/blogdetails',
+    name: 'blogdetails',
+    component: BlogDetails
+  },
+  {
+    path: '/404',
+    name: 'Not Found',
+    component: NotFound
+  },
+  {
+    path: '*',
+    redirect: '/404'
   }
 ]
 
